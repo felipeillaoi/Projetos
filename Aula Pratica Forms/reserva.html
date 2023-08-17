@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+</head>
+<body>
+    <h1>Formulario de Reserva de viagem</h1><br>
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="inome">Nome</label>
+            <input type="text" name="Nome" id="inome">
+            <br><br>
+            <label for="iemail">Email</label>
+            <input type="email" name="email" id="iemail">
+            <br><br>
+            <textarea name="obs" cols="26" rows="5" >Observações:</textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Escolha seus serviços</legend>
+            <label><input type="checkbox" name="comprapassagem">Compra de Passagens</label>
+            <label><input type="checkbox" name="reservahospedagem">Reserva de Hospedagem</label>
+            <label><input type="checkbox" name="aluguelveículo">Aluguel de Veículos</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Forma de Pagamento</legend>
+            <label><input type="radio" name="pagamento" value="Crédito">Crédito</label>
+            <label><input type="radio" name="pagamento" value="Débito">Débito</label>
+            <label><input type="radio" name="pagamento" value="Pix">Pix</label>
+            <label><input type="radio" name="pagamento" value="Boleto">Boleto Bancário</label>
+            <br><br>
+            <label>Prazo de pagamento</label>
+            <select name="prazo" id="iprazo">
+                <option value="avista">À vista</option>
+                <option value="5x">5x sem juros</option>
+                <option value="10x">10x com juros</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Comprar">
+
+        </fieldset>
+
+
+    </form>
+</body>
+</html>
