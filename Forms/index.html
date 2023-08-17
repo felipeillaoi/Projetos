@@ -7,10 +7,51 @@
 </head>
 <body>
     <h1>Formularios Html</h1>
-    <form action="page.php" method="post">
-        <label for="cname">Nome Completo</label>
-        <input type="text" name="Nome" id="cname">
+    <form action="page.php" target="_blank" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="fname">Nome</label>
+            <input type="text" required name="Nome" id="fname"><br><br>
+    
+            <label for="iemail">Email</label>
+            <input type="email" required name="email" id="iemail"><br><br>
+    
+            <label for="idata">Data de Ida</label>
+            <input type="date" required name="data" id="idata"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações adicionais</legend>
+            <input type="checkbox" name="frontend" id="frontend">Front-End
+            <br><input type="checkbox" name="backend" id="ibackend">Back-End
+            <br><input type="checkbox" name="fullstack" id="ifullstack">Dev Full Stack<br>
+        
+            <label for="ilinguagem">Escolha uma linguagem</label>
+            <select name="linguagem" id="ilinguagem">
+                <option value="python">Python</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+
         <input type="submit" value="Confirmar">
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolha a forma de pagamento</legend>
+            <label>
+                <input type="radio" name="pagamento" value="Crédito">Crédito
+            </label>
+            <label>
+                <input type="radio" name="pagamento" value="Débito">Débito
+            </label>
+            <label>
+                <input type="radio" name="pagamento" value="Pix">Pix
+            </label>
+            <label>
+                <input type="radio" name="pagamento" value="Boleto">Boleto Bancário
+            </label>
+        </fieldset>
     </form>
 </body>
 </html>
