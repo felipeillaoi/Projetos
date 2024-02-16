@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade prática 2</title>
+</head>
+<body>
+    <header>
+        <h1>Atividade prática 2</h1>
+        <h3>Criando um formulário brabo</h3><hr>
+    </header>
+    <section>
+        <h2>Preencha os dados necessarios</h2>
+        <form action="" method="GET">
+            <fieldset>
+                <legend>Dados</legend>
+                <label for="name">Nome</label>
+                <input type="text" name="nome" id="name"><br><br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email"><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Quais serviços contratar?</legend>
+                <label>
+                    <input type="checkbox" name="passagens" value="Passagens">Compra de Passagem <br>
+                </label>
+                <label>
+                    <input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de Hospedagem <br>
+                </label>
+                <label>
+                    <input type="checkbox" name="veiculos" value="Veículo">Reserva de Veículos <br>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Forma de Pagamento</legend>
+                <label>
+                    <input type="radio" name="pagamento" value="Cartão de credito">Crédito
+                </label>
+                <label>
+                    <br><input type="radio" name="pagamento" value="Cartão de debito">Débito
+                </label>
+                <label>
+                    <br><input type="radio" name="pagamento" value="Pix">Pix
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o prazo</legend>
+                <select name="prazo pagamento">
+                    <option value="À vista">À vista</option>
+                    <option value="Parcelas de 5x">5x Sem Juros</option>
+                    <option value="Parcelas de 12x" selected>12x Sem Juros</option>
+                </select>
+            </fieldset>
+
+            <label for="comentario">Comentarios</label><br>
+            <textarea name="comenttario" id="comentario" cols="30" rows="10"></textarea><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+</body>
+</html>

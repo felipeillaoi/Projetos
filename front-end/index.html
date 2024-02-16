@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem dos sonhos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Pacotes</li>
+                <li>Taxas</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Parte 1</h1>
+    <p>Este aqui vai ser um site muito top</p>
+    <p>Mais um paragrafo, frases aleatorias pão com manteiga</p>
+    <section>
+        <h2>Parte 2</h2>
+        <p>Clique no link ao lado para ser direcionado pro Google ->
+        <a href="/video/video.mp4">Video Download</a>
+        </p>
+        <figure>
+            <img src="img/campo.jpg" width="720px" height="360px" alt="Campo verde">
+            <figcaption>Campo</figcaption>
+        </figure>
+        <figure>
+            <img src="img/Lagoa.jpg" width="720px" height="360px" alt="Lago">
+            <figcaption>Lagoa</figcaption>
+        </figure>
+        <figure>
+            <img src="img/Safari.jpg" width="720px" height="360px" alt="Safari africano">
+            <figcaption>Safari</figcaption>
+        </figure>
+        <video controls width="720px" height="360px">
+            <source src="video/video.mp4" type="video/mp4">
+            Seu navegador não suporta o video, clique <a href="/video/video.mp4">Aqui</a> para baixar.
+        </video>
+        <br><br>
+        <section>
+            <h2>Contato</h2>
+            <form action="" method="GET">
+                <fieldset>
+                    <legend>Dados</legend>
+                    <label for="name">Nome</label>
+                    <input type="text" name="nome" id="name"><br><br>
+                    <label for="email">Email</label>
+                    <input type="email" required name="email" id="email"><br><br>
+                    <label for="">Data de ida</label>
+                    <input type="date" name="dataIda"><br><br>
+                    <label for="">Data de volta</label>
+                    <input type="date" name="dataVolta"><br><br>
+                    <label for="">Quantidade de pessoas</label>
+                    <input type="number" name="qtdPessoas"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Quais serviços contratar?</legend>
+                    <label>
+                        <input type="checkbox" name="passagens" value="Passagens">Compra de Passagem <br>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de Hospedagem <br>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="veiculos" value="Veículo">Reserva de Veículos <br>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Forma de Pagamento</legend>
+                    <label>
+                        <input type="radio" name="pagamento" value="Cartão de credito">Crédito
+                    </label>
+                    <label>
+                        <br><input type="radio" name="pagamento" value="Cartão de debito">Débito
+                    </label>
+                    <label>
+                        <br><input type="radio" name="pagamento" value="Pix">Pix
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Escolha o prazo</legend>
+                    <select name="prazo pagamento">
+                        <option value="À vista">À vista</option>
+                        <option value="Parcelas de 5x">5x Sem Juros</option>
+                        <option value="Parcelas de 12x" selected>12x Sem Juros</option>
+                    </select>
+                </fieldset>
+
+                <label for="comentario">Comentarios</label><br>
+                <textarea name="comenttario" id="comentario" cols="30" rows="10"></textarea><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <br><br>
+        <section>
+            <table border width="50%">
+                <caption>Planos de pagamento</caption>
+                <thead>
+                    <tr>
+                        <th>Plano Diario</th>
+                        <th>Plano Mensal</th>
+                        <th>Plano Anual</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>29,90</td>
+                        <td>249,00</td>
+                        <td>2499,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </section>
+    <br><br>
+    <hr>
+    <footer>
+        <p>Desenvolvido por Marcos Felipe na madrugada do dia 16 de Janeiro</p>
+    </footer>
+</body>
+</html>
