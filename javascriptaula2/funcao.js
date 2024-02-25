@@ -42,3 +42,4 @@ function primeira_maiscula(elemento){
 }
 
 console.log(lista_maisculo)
+console.log("oi")
