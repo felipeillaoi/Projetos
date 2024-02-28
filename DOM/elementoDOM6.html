@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento DOM 6</title>
+    <script>
+        function exemploEvento(){
+            alert("alerta")
+        }
+        function passarMousePorCima(){
+            document.getElementById("exemplo").innerHTML = 'Marcos'
+        }
+        function tirarMouse(){
+            document.getElementById("exemplo").innerHTML = 'Felipe'
+        }
+    </script>
+</head>
+<body>
+    <p>Clique no Botão a Seguir e Veja o resultado</p>
+    <form>
+        <input type="button" onmouseover="passarMousePorCima()"   onmouseout="tirarMouse()" value="Alerta">
+    </form>
+
+    <h1 id="exemplo">Quem é</h1>
+</body>
+</html>
