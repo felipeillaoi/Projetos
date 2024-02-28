@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Usando seletor do DOM</h1>
+    <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>Node.js</li>
+    </ul>
+
+    <div id="conteudo" name="divconteudo" class="mensagem">
+
+    </div>
+
+    <div name="divconteudo" class="mensagem">
+
+    </div>
+
+    <div name="divconteudo" class="mensagem">
+
+    </div>
+
+</body>
+<script>
+    elemento0 = document.getElementsByTagName("li")[0];
+    elemento0.style.color = 'blue'
+
+    elemento1 = document.getElementsByTagName("li")[1];
+    elemento1.style.background = 'red'
+
+    elemento2 = document.getElementsByTagName("li")[2];
+    elemento2.innerText = "React.js"
+
+    elementoDiv = document.getElementById("conteudo");
+    elementoDiv.innerHTML = "<p> Estou colocando a tag p dentro da div </p>"
+
+    elementoDivName = document.getElementsByName("divconteudo")[1]
+    elementoDivName.style.color = 'blue'
+    elementoDivName.innerText = 'Texto Generico'
+
+    elementoDivClass = document.getElementsByClassName("mensagem")[2];
+    elementoDivClass.innerHTML = "<p> Estou colocando a tag p dentro da div </p>"
+
+
+
+</script>
+</html>
