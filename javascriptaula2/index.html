@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="conta.js"></script>
+    <title>Formulario: Cadastro de Funcionario</title>
+    <script src="aulapratica2.js"></script>
 </head>
 <body>
-    
+    <h1>Cadastro de Funcionario</h1>
+    <form name="cadastro" onsubmit="enviar_dados()">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome"><br><br>
+        <label for="idade">Idade</label>
+        <input type="number" id="idade"><br><br>
+        <label for="cargo">Cargo</label>
+        <input type="text" id="cargo"><br><br>
+        <label for="departamento">Dpto.</label>
+        <input type="text" id="departamento"><br><br>
+        <label for="linguagem">Linguagem</label>
+        <select id="linguagem">
+            <option value="Null">Default</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
