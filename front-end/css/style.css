@@ -1,17 +1,6 @@
-body{
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 2.2em;
-    color: #818181;
-    margin: 0;
-}
-
-header{
-    background-color: #f4511e;
-}
-
-section, footer{
-    margin: 40px;
+header p{
+    color: #ffffff;
+    font-weight: 600;
 }
 
 h1{
@@ -27,26 +16,4 @@ h2{
     text-transform: uppercase;
     color: #303030;
     font-weight: 600;
-}
-
-table {
-    width: 100%;
-}
-
-table td {
-    color: #303030;
-    padding: 5px;
-}
-
-table tr:nth-child(even){
-    background-color: #e9e9e9;
-}
-
-table tr:nth-child(odd){
-    background-color: #bdbdbd;
-}
-
-table thead th {
-    background-color: #f4511e;
-    color: white;
 }
