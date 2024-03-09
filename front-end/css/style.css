@@ -17,3 +17,9 @@ h2{
     color: #303030;
     font-weight: 600;
 }
+
+.carousel-caption h5{
+    font-size: 80px;
+    color: darkblue;
+    text-shadow: 2px 2px 2px black;
+}
